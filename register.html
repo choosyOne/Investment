@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+
+<title>SidEx - Courier Management System</title>
+
+
+
+<meta name="viewport" content="width=device-width, , maximum-scale=0.37">
+
+
+
+
+<link href="templatemo_style.css" type="text/css" rel="stylesheet" /> 
+
+
+
+<!-- css links from project forex -->
+<link rel="stylesheet" href="http://localhost/forexprojectroot/bootstrap.min.css">
+<link rel="stylesheet" href="http://localhost/forexprojectroot/font-awesome.min.css">
+<link rel="stylesheet" href="http://localhost/forexprojectroot/theme.css">
+<link rel="stylesheet" href="http://localhost/forexprojectroot/demo-finance.css">
+<link rel="stylesheet" href="http://localhost/forexprojectroot/skin-finance.css">
+
+
+<!-- css links from project Courier-Management -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900italic,900,700italic,700,500italic,500,400italic' rel='stylesheet' type='text/css' />
+	
+	
+
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+	body {
+		background:#3A5598;
+		
+	}
+	table {	
+			background:rgba(248,248,255, 0.8);
+			padding-left:15px;
+			padding-right:15px;
+			padding-top:15px;
+			padding-bottom:15px;
+			width:80%;
+			border-radius:10px;
+			font-family:Verdana, Geneva, sans-serif;
+			cellpadding:5px; 
+			cellspacing:5px;
+	}
+	td {
+		border-bottom: 1px green dotted;
+		height:30px;
+	}
+	span {
+		color:red;
+		font-size:8pt;
+	}
+	td.hr {
+		border-bottom: 1px blue solid;
+		font-size:15pt;
+		color:blue;
+		font-weight:bold;
+	}
+	td.nb {
+		border-bottom:0px green dotted;
+	}
+	td.last_hr {
+		border-bottom:1px blue solid;
+		border-bottom-left-radius:2em;
+		border-bottom-right-radius:2em;
+	}	
+</style>
+
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["reg"]["username"].value
+var y=document.forms["reg"]["password"].value
+var z=document.forms["reg"]["rpassword"].value
+var t=document.forms["reg"]["question"].value
+var b=document.forms["reg"]["answer"].value
+var c=document.forms["reg"]["fname"].value
+var d=document.forms["reg"]["lname"].value
+var e=document.forms["reg"]["day"].value
+var f=document.forms["reg"]["month"].value
+var g=document.forms["reg"]["year"].value
+var h=document.forms["reg"]["occupation"].value
+var i=document.forms["reg"]["email"].value
+var j=document.forms["reg"]["mobile"].value
+var k=document.forms["reg"]["nationality"].value
+var l=document.forms["reg"]["address"].value
+var m=document.forms["reg"]["city"].value
+var n=document.forms["reg"]["state"].value
+var o=document.forms["reg"]["zip"].value
+var p=document.forms["reg"]["country"].value
+if (x==null || x=="")
+  {
+  alert("Username must be filled out");
+  return false;
+  }
+if (y==null || y=="")
+  {
+  alert("Please enter your password");
+  return false;
+  }
+if (z==null || z=="")
+  {
+  alert("Please re-enter your password");
+  return false;
+  }
+if (t=="9")
+  {
+  alert("Please select a security question");
+  return false;
+  }
+if (b==null || b=="")
+  {
+  alert("Please give your answer to the security question");
+  return false;
+  }
+if (c==null || c=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+if (d==null || d=="")
+  {
+  alert("Last name must be filled out");
+  return false;
+  }
+if (e=="00")
+  {
+  alert("Please enter a date");
+  return false;
+  }
+if (f=="0")
+  {
+  alert("Please enter month");
+  return false;
+  }
+if (g=="")
+  {
+  alert("Please enter year");
+  return false;
+  }
+if (h=="7")
+  {
+  alert("Please select your occupation");
+  return false;
+  }
+var atpos=i.indexOf("@");
+var dotpos=i.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=i.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+if (j==null || j=="")
+  {
+  alert("Please enter your mobile number");
+  return false;
+  }
+if (k=="")
+  {
+  alert("Please select your nationality");
+  return false;
+  }
+if (l==null || l=="")
+  {
+  alert("Address must be filled out");
+  return false;
+  }
+if (m=="")
+  {
+  alert("Please select your city");
+  return false;
+  }
+if (n=="")
+  {
+  alert("Please select your state");
+  return false;
+  }
+if (o==null || o=="")
+  {
+  alert("Please enter pincode");
+  return false;
+  }
+if (p=="")
+  {
+  alert("Please select your country");
+  return false;
+  }
+
+}
+</script>
+
+
+</head>
+
+
+
+<body  style= "background-color: #000000; ">
+	
+	
+<div style= "background-image: url('images/blue.jpg'); padding: 0 7px 0 7px;" >
+<!-- forex project header -->
+
+<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0', 'stickyChangeLogo': false}">
+<div class="header-body" style="background-color: rgb(0,128,255);">
+<div class="header-container container" style="height: 150px">
+<div class="header-row">
+
+<div class="header-column">
+<div class="header-row">
+
+
+
+<div class="header-logo">
+<a href="https://itradeslive.com/">
+<img src="images/Icon.png" alt="Courier" width="100px" height="90px" />
+</a>
+<span style="font:'Courier New', Courier, monospace; color: rgb(0,0,0); font-size: 30px">SidEx - Courier Service</span></h2>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="header-column justify-content-end">
+<div class="header-row">
+<div class="header-nav">
+
+<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 custom-header-nav-main-dark-style">
+<nav class="collapse">
+<ul class="nav nav-pills" id="mainNav" style="height: 300px">
+<li >
+<a class="nav-link active" href="index.php"  style="font-size: 25px">
+Home
+</a>
+
+<br/>
+
+</li>
+
+
+
+
+<li>
+<a class="nav-link" href="index.php#about" style="font-size: 25px">
+About Us
+</a>
+
+<br/>
+
+</li>
+
+<li>
+<a class="nav-link" href="index.php#services" style="font-size: 25px" >
+Rate Table
+</a>
+
+<br/>
+
+</li>
+
+<li>
+<a class="nav-link" href="register.html" style="font-size: 25px">
+Register
+</a>
+
+<br/>
+
+</li>
+
+
+<li>
+<a class="nav-link" href="index.php#login" style="font-size: 25px">
+Login
+</a>
+</li>
+
+</ul>
+</nav>
+</div>
+
+<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav" style="height: 70px; width: 70px"  >
+<i class="fa fa-bars" ></i>
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</header>
+
+
+
+
+
+
+
+<div style= "padding: 15px;">
+	
+<form name="reg" action='#' onsubmit="return validateForm();" method='post' style= "margin-top: 10px;">
+<table align="center" height= "1200px" >
+	<tr>
+		<td class="hr" colspan="2">Sign Up</td>
+	</tr>
+
+	<tr>
+    <td align="center"><select name="type">
+						<option value = "client">Client</option>
+						<option value = "employee">Employee</option>
+					</select>
+    </td></tr>
+	
+	
+	<tr>
+		<td style= "font-size: 27px">Username</td><td><input type="text" name="username" size="20" maxlength="20" style= "font-size: 30px" >		  &#40;max 10 characters&#41;</td>
+	</tr>
+	<tr>
+		<td style= "font-size: 27px">Password</td><td><input type="password" name="password" size="30" maxlength="30" style= "font-size: 30px"></td>
+	</tr>
+	<tr>
+		<td style= "font-size: 27px">repeat Password</td><td><input type="password" name="rpassword" size="30" maxlength="30" style= "font-size: 30px"></td>
+	</tr
+	>
+	<tr>
+		<td style= "font-size: 27px">Name</td>
+	  <td><input type="text" name="fname" size="15" maxlength="15" style= "font-size: 30px"></td>
+	</tr>
+	<tr>
+		<td style= "font-size: 27px" >E-mail id</td>
+		<td><input type="text" name="email" size="30" maxlength="30" style= "font-size: 30px"> </td>
+	</tr>
+	<tr>
+		<td style= "font-size: 27px">Mobile</td>
+		
+		<td style= "font-size: 27px">+1<input type="text" name="mobile" size="10" maxlength="10" style= "font-size: 30px"> </td>
+	</tr>
+	<tr>
+		<td style= "font-size: 27px">Address</td>
+		<td><input type="text" name="address" size="30" maxlength="30" style= "font-size: 30px"></td>
+	</tr>
+	<tr>
+		<td style= "font-size: 27px">City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td><input type="text" name="city" size="15" maxlength="15" style= "font-size: 30px"></td>
+	</tr>
+	
+	<tr>
+		<td style= "font-size: 27px">Country</td>
+		<td><select name="country" style= "font-size: 30px">
+		<option value="" selected="selected">-- Select One --</option>
+		<option value="United States of America">United States of America</option>
+		<option value="Not Listed">Not Listed</option>
+		</select></td>
+	</tr>
+	<tr>
+		
+		<td colspan="2" class="last_hr" align="center"><input type="submit" name="submit" value="Submit" style= "font-size: 30px"> &nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" name="clear" value="Reset" style= "font-size: 30px"> </td>
+	</tr>
+     <tr >  <td colspan="2" align="center" style= "font-size: 37px;"> 
+     <a href="index.php#login" style= "color: #99FF33"> <strong> Go to login page !! </strong> </a>
+    </td>
+    </tr>
+</table>
+</form>
+
+</div>
+</div>
+
+
+
+
+
+
+<div id="templatemo_footer" >
+
+	<div class="top-footer-grids_home" >
+                            <div class="top-footer-grid" >
+                                    <h3>Contact us</h3>
+                                    <ul class="address" >
+                                        <li><span class="map-pin"> </span><label  style= "font-size: 26px" >AP Kanvide Bhawan <br>3122 3 Chatrawaas <br>Near Powai Lake, Bhopal MP (462003)
+                                      <br> <br><span class="mob"></span> Telegram no - 0995-5377130, Mob- 8000000008     </label></li>
+                                        
+                                        
+                                    </ul>
+                            </div>
+                         
+                                
+                                
+                                
+                                   <div class="top-footer-grid">
+                                    <h3>Important Links</h3>
+                                    <ul class="latest-post" >
+                                        <li >    <a href="index.php" style= "font-size: 26px; color: #FFFFFF">Home</a>  </li>
+                                         
+                                        <li><a href="register.html" style= "font-size: 26px; color: #FFFFFF">Register</a> </li>
+                                        <li><a href="index.php#login" style= "font-size: 26px; color: #FFFFFF">Login</a> </li>
+                                    </ul>
+                            </div>
+                            
+
+
+
+                                   <div class="top-footer-grid">
+                                    <h3>Other Links</h3>
+                                    <ul class="latest-post">
+                                        <li><a href="index.php#about" style= "font-size: 26px; color: #FFFFFF">About Us</a> </li>
+                                        <li><a href="#" style= "font-size: 26px; color: #FFFFFF">Privacy Policy</a> </li>
+                                        <li><a href="#" style= "font-size: 26px; color: #FFFFFF">Terms & Conditions</a> </li>
+                                        <li><a href="#" style= "font-size: 26px; color: #FFFFFF">Help & FAQs</a> </li>
+                                        <li><a href="#" style= "font-size: 26px; color: #FFFFFF">Contact Us</a> </li>
+                                    </ul>
+                            </div>
+                            
+                            </div>
+	
+
+
+
+<div id="copyright" >
+    Copyright © 2021<a href="#">Sanctus Design</a>
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- javascript links from project forex -->
+
+<script src="http://localhost/forexprojectroot/jquery.min.js"></script>
+<script src="http://localhost/forexprojectroot/popper.min.js"></script>
+<script src="http://localhost/forexprojectroot/bootstrap.min.js"></script>
+<script src="http://localhost/forexprojectroot/common.min.js"></script>
+<script src="http://localhost/forexprojectroot/theme.js"></script>
+<script src="http://localhost/forexprojectroot/theme.init.js"></script>
+
+
+
+</body>
+</html>

